@@ -8,13 +8,13 @@
         </group>
         <group id="GrpTime" label="Time" autoScale="true">
           <box id="g2_box1">
-            <button id="BttnTotalTime" imageMso="TimeInsert" enabled="false" label="Totale: " />
+            <button id="BttnTotalTime" imageMso="TimeInsert" enabled="false" label="Total: " />
           </box>
           <box id="g2_box2">
-            <button id="BttnDirectTime" imageMso="TimeInsert" enabled="false" label="Directe:" />
+            <button id="BttnDirectTime" imageMso="TimeInsert" enabled="false" label="Direct:" />
           </box>
           <box id="g2_box3">
-            <button id="BttnIndirectTime" imageMso="TimeInsert" enabled="false" label="Indirecte:" />
+            <button id="BttnIndirectTime" imageMso="TimeInsert" enabled="false" label="Indirect:" />
           </box>
           <box id="g2_box4">
             <editBox id="LblTT" sizeString="999999" maxLength="6" getText="UpdateTTLabel" />
@@ -26,13 +26,13 @@
             <editBox id="LblIT" sizeString="999999" maxLength="6" getText="UpdateITLabel" />
           </box>
           <box id="g2_box7">
-            <button id="BttnDeclarabel" imageMso="TimeInsert" enabled="false" label="Declarabel:" />
+            <button id="BttnDeclarabel" imageMso="TimeInsert" enabled="false" label="Billable:" />
           </box>
           <box id="g2_box8">
-            <button id="BttnTravelTime" imageMso="TimeInsert" enabled="false" label="Reistijd:" />
+            <button id="BttnTravelTime" imageMso="TimeInsert" enabled="false" label="Travel:" />
           </box>
           <box id="g2_box9">
-            <button id="BttnOtherTime" imageMso="TimeInsert" enabled="false" label="Overige:" />
+            <button id="BttnOtherTime" imageMso="TimeInsert" enabled="false" label="Other:" />
           </box>
           <box id="g2_box10">
             <editBox id="LblB" sizeString="999999" maxLength="6" getText="UpdateBLabel" />
