@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab id="RibbonDPIScaling" label="RibbonDPIScaling">
+        <group id="GrpActivity" label="Tijdregistratie blok">
+          <button id="BtnnInsertActivityTable" imageMso="TableInsertDialogWord" onAction="BtnnInsertActivityTable_Click" label="Nieuwe activiteit" size="large" />
+        </group>
+        <group id="GrpTime" getLabel="SetGrpTimeLabel" autoScale="true">
+          <box id="g2_box1">
+            <button id="BttnTotalTime" imageMso="TimeInsert" enabled="false" label="Totale: " />
+          </box>
+          <box id="g2_box2">
+            <button id="BttnDirectTime" imageMso="TimeInsert" enabled="false" label="Directe:" />
+          </box>
+          <box id="g2_box3">
+            <button id="BttnIndirectTime" imageMso="TimeInsert" enabled="false" label="Indirecte:" />
+          </box>
+          <box id="g2_box4">
+            <editBox id="LblTT" sizeString="999999" maxLength="6" getText="UpdateTTLabel" />
+          </box>
+          <box id="g2_box5">
+            <editBox id="LblDT" sizeString="999999" maxLength="6" getText="UpdateDTLabel" />
+          </box>
+          <box id="g2_box6">
+            <editBox id="LblIT" sizeString="999999" maxLength="6" getText="UpdateITLabel" />
+          </box>
+          <box id="g2_box7">
+            <button id="BttnDeclarabel" imageMso="TimeInsert" enabled="false" label="Declarabel:" />
+          </box>
+          <box id="g2_box8">
+            <button id="BttnTravelTime" imageMso="TimeInsert" enabled="false" label="Reistijd:" />
+          </box>
+          <box id="g2_box9">
+            <button id="BttnOtherTime" imageMso="TimeInsert" enabled="false" label="Overige:" />
+          </box>
+          <box id="g2_box10">
+            <editBox id="LblB" sizeString="999999" maxLength="6" getText="UpdateBLabel" />
+          </box>
+          <box id="g2_box11">
+            <editBox id="LblTrT" sizeString="999999" maxLength="6" getText="UpdateTrTLabel" />
+          </box>
+          <box id="g2_box12">
+            <editBox id="LblOT" sizeString="999999" maxLength="6" getText="UpdateOTLabel" />
+          </box>
+        </group>
+        <group id="GrpDocument" getLabel="SetGrpDocument" autoScale="true">
+          <menu id="MenuNewDocument" imageMso="DocumentTemplate" getLabel="SetMenuNewDocumentLabel">
+            <button id="TreatmentPlan" imageMso="MeetingsToolAppointmentAgendaDetails" onAction="NewTreatmentPlanClick" getLabel="SetTreatmentPlanLabel"/>
+            <button id="PrivacyStatement" imageMso="MeetingsToolAppointmentAgendaDetails" onAction="NewPrivacyStatementClick" getLabel="SetPrivacyStatementLabel"/>
+            <button id="DirectDebitAuthorization" imageMso="MeetingsToolAppointmentAgendaDetails" onAction="NewDirectDebitAuthorizationClick" getLabel="SetDirectDebitAuthorizationLabel"/>
+          </menu>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
