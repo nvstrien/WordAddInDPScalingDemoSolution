@@ -3,10 +3,10 @@
   <ribbon>
     <tabs>
       <tab id="RibbonDPIScaling" label="RibbonDPIScaling">
-        <group id="GrpActivity" label="Tijdregistratie blok">
-          <button id="BtnnInsertActivityTable" imageMso="TableInsertDialogWord" onAction="BtnnInsertActivityTable_Click" label="Nieuwe activiteit" size="large" />
+        <group id="GrpActivity" label="Time registration">
+          <button id="BtnnInsertActivityTable" imageMso="TableInsertDialogWord" onAction="BtnnInsertActivityTable_Click" label="New activity" size="large" />
         </group>
-        <group id="GrpTime" getLabel="SetGrpTimeLabel" autoScale="true">
+        <group id="GrpTime" label="Time" autoScale="true">
           <box id="g2_box1">
             <button id="BttnTotalTime" imageMso="TimeInsert" enabled="false" label="Totale: " />
           </box>
@@ -44,11 +44,11 @@
             <editBox id="LblOT" sizeString="999999" maxLength="6" getText="UpdateOTLabel" />
           </box>
         </group>
-        <group id="GrpDocument" getLabel="SetGrpDocument" autoScale="true">
-          <menu id="MenuNewDocument" imageMso="DocumentTemplate" getLabel="SetMenuNewDocumentLabel">
-            <button id="TreatmentPlan" imageMso="MeetingsToolAppointmentAgendaDetails" onAction="NewTreatmentPlanClick" getLabel="SetTreatmentPlanLabel"/>
-            <button id="PrivacyStatement" imageMso="MeetingsToolAppointmentAgendaDetails" onAction="NewPrivacyStatementClick" getLabel="SetPrivacyStatementLabel"/>
-            <button id="DirectDebitAuthorization" imageMso="MeetingsToolAppointmentAgendaDetails" onAction="NewDirectDebitAuthorizationClick" getLabel="SetDirectDebitAuthorizationLabel"/>
+        <group id="GrpDocument" label="Document" autoScale="true">
+          <menu id="MenuNewDocument" imageMso="DocumentTemplate" label="New Document">
+            <button id="TreatmentPlan" imageMso="MeetingsToolAppointmentAgendaDetails" onAction="NewTreatmentPlanClick" label="Test 1"/>
+            <button id="PrivacyStatement" imageMso="MeetingsToolAppointmentAgendaDetails" onAction="NewPrivacyStatementClick" label="Test 2"/>
+            <button id="DirectDebitAuthorization" imageMso="MeetingsToolAppointmentAgendaDetails" onAction="NewDirectDebitAuthorizationClick" label="Test 3"/>
           </menu>
         </group>
       </tab>
